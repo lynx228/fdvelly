@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Фан-сайт Велли — информация, арты, история и материалы фандома.">
+    <title>Велли — фан-сайт</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">
+            ВЕЛЛИ
+        </a>
+        <nav class="navigation">
+            <a href="#home">
+                Главная
+            </a>
+            <a href="#about">
+                О Велли
+            </a>
+            <a href="#gallery">
+                Галерея
+            </a>
+            <a href="#lore">
+                Лор
+            </a>
+        </nav>
+        <button class="menu-button" id="menuButton" aria-label="Открыть меню">
+            ☰
+        </button>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">
+                    ФАН-САЙТ
+                </p>
+                <h1>
+                    Велли
+                </h1>
+                <p class="hero-description">
+                    Добро пожаловать в фанатский уголок, посвящённый Велли.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="button button-primary">
+                        Узнать больше
+                    </a>
+                    <a href="#gallery" class="button button-secondary">
+                        Галерея
+                    </a>
+                </div>
+            </div>
+            <div class="hero-character">
+                <img src="images/velly/velly-main.png" alt="Велли">
+            </div>
+            <div class="hero-gradient"></div>
+        </section>
+        <section class="section about" id="about">
+            <div class="section-content about-layout">
+                <div class="about-text">
+                    <p class="section-label">
+                        01 — ПЕРСОНАЖ
+                    </p>
+                    <h2>
+                        О Велли
+                    </h2>
+                    <p class="about-description">
+                        Здесь будет размещена основная информация
+                        о Велли, её характере, истории и внешности.
+                    </p>
+                    <p class="about-description">
+                        Этот раздел можно постепенно расширять, добавляя новые сведения из мира фандома.
+                    </p>
+                </div>
+                <div class="character-card">
+                    <div class="character-card-image">
+                        <img src="images/velly/velly-main.png" alt="Велли">
+                    </div>
+                    <div class="character-card-info">
+                        <h3>
+                            Велли
+                        </h3>
+                        <p>
+                            Персонаж фандома
+                        </p>
+                        <div class="character-stats">
+                            <div class="stat">
+                                <span class="stat-name">
+                                    Имя
+                                </span>
+                                <span class="stat-value">
+                                    Велли
+                                </span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">
+                                    Тип
+                                </span>
+                                <span class="stat-value">
+                                    Персонаж
+                                </span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">
+                                    Статус
+                                </span>
+                                <span class="stat-value">
+                                    Активна
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section gallery" id="gallery">
+            <div class="section-content gallery-content">
+                <p class="section-label">
+                    02 — ГАЛЕРЕЯ
+                </p>
+                <h2>
+                    Галерея
+                </h2>
+                <p class="gallery-description">
+                    Изображения Велли и материалы фандома. Нажми на изображение, чтобы открыть его.
+                </p>
+                <div class="gallery-grid">
+                    <button class="gallery-item" data-image="images/velly/velly-main.png" data-title="Велли">
+                        <img src="images/velly/velly-main.png" alt="Велли">
+                        <span class="gallery-item-title">
+                            Велли
+                        </span>
+                    </button>
+                    <button class="gallery-item" data-image="images/velly/velly-main.png" data-title="Велли — персонаж">
+                        <img src="images/velly/velly-main.png" alt="Велли — персонаж">
+                        <span class="gallery-item-title">
+                            Персонаж
+                        </span>
+                    </button>
+                    <button class="gallery-item" data-image="images/velly/velly-main.png" data-title="Велли — арт">
+
+                        <img src="images/velly/velly-main.png" alt="Велли — арт">
+                        <span class="gallery-item-title">
+                            Арт
+                        </span>
+                    </button>
+                    <button class="gallery-item" data-image="images/velly/velly-main.png" data-title="Велли — референс">
+                        <img src="images/velly/velly-main.png" alt="Велли — референс">
+                        <span class="gallery-item-title">
+                            Референс
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section lore" id="lore">
+            <div class="section-content">
+                <p class="section-label">
+                    03 — ИСТОРИЯ
+                </p>
+                <h2>
+                    Лор
+                </h2>
+                <p>
+                    Здесь будет история Велли, события, персонажи и другие важные элементы фандома.
+                </p>
+                <div class="lore-placeholder">
+                    <span>
+                        ИСТОРИЯ В РАЗРАБОТКЕ
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="image-modal" id="imageModal">
+    <button class="modal-close" id="modalClose" aria-label="Закрыть">
+            ×
+        </button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <p class="modal-title" id="modalTitle">
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>
+            © 2026 Велли Fan Site
+        </p>
+        <p>
+            Официальный фанатский сайт.
+        </p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
