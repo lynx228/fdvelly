@@ -81,3 +81,29 @@ document.addEventListener( "keydown", (event) => {
         closeImageModal();
     }
 })
+
+const galleryFilters = document.querySelectorAll(".gallery-filter");
+
+galleryFilters.forEach((filterButton) => {
+    filterButton.addEventListener("click", () => {
+        const selectedFilter = filterButton.dataset.filter;
+        galleryFilters.forEach((button) => {
+            button.classList.remove("active");
+});
+    filterButton.classList.add("active");
+        galleryItems.forEach((item) => {
+        const category = item.dataset.category;
+        const shouldShow = selectedFilter === "all" || category === selectedFilter;
+            if (shouldShow) {
+                item.classList.remove("hidden");
+                item.classList.remove( "show-animation" );
+                void item.offsetWidth;
+                item.classList.add( "show-animation" );
+            }
+            else {
+                item.classList.add("hidden");
+            }
+        });
+    });
+});
+        
