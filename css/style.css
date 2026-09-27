@@ -145,6 +145,15 @@ body {
     color: transparent;
 }
 
+.hero-content h1 {
+    background: linear-gradient(90deg, #ffea75, #7dff9b, #6ee7ff, #8d8cff, #ff82d5, #ffea75 );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: vellyRainbow 6s ease-in-out infinite;
+}
 
 .hero-description {
     max-width: 480px;
@@ -620,6 +629,18 @@ body {
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes vellyRainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
